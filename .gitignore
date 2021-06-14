@@ -1,0 +1,6 @@
+x64/
+SpugetEngine/x64/
+SpugetEngine/obj/
+DemoGame/x64
+DemoGame/obj
+.vs/
