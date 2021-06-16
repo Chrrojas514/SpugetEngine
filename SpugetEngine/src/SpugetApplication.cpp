@@ -20,8 +20,13 @@ namespace Spuget
 
 	void SpugetApplication::Init()
 	{
-		if (instance != nullptr)
+		if (instance == nullptr)
 			instance = new SpugetApplication;
+	}
+
+	SpugetApplication::~SpugetApplication()
+	{
+		
 	}
 
 	SpugetApplication::SpugetApplication()

@@ -20,6 +20,14 @@
     <ClCompile Include="include\pch.cpp" />
     <ClCompile Include="src\SpugetApplication.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\glad_openGL\glad_openGL.vcxproj">
+      <Project>{1f15f356-4732-4f99-b65d-8e3a49e29933}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\glfw\build\src\glfw.vcxproj">
+      <Project>{ca81de87-9676-3602-8f88-a1a909b2ae70}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -65,10 +73,10 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_SPUGET_DLL_BUILD;_MYDEBUG</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_SPUGET_DLL_BUILD;_MYDEBUG;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_SPUGET_DLL_BUILD;_MYDEBUG</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\dev\SpugetEngine\SpugetEngine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\SpugetEngine\glad_openGL\include;C:\dev\SpugetEngine\glfw\include;C:\dev\SpugetEngine\SpugetEngine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -83,10 +91,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_SPUGET_DLL_BUILD;_MYDEBUG</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_SPUGET_DLL_BUILD;_MYDEBUG;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_SPUGET_DLL_BUILD;_MYDEBUG</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\dev\SpugetEngine\SpugetEngine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\SpugetEngine\glad_openGL\include;C:\dev\SpugetEngine\glfw\include;C:\dev\SpugetEngine\SpugetEngine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
